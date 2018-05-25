@@ -1,0 +1,217 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.3, 30 April 2017) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font 
+%% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Salahuddeen Ahmed}
+\tagline{University Graduate}
+\photo{2.8cm}{Globe_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{salahuddeen.ahmed@outlook.com}
+  \phone{1-868-467-2206}
+  \mailaddress{Apartment \#8 , \#9 Henry Street}
+  \location{Gasparillo, Trinidad}
+  \homepage{salahuddeen.github.io}
+  \twitter{@saalaahuddeeeen}
+  \linkedin{linkedin.com/salahuddeen-ahmed-13173b164/}
+  \github{github.com/Salahuddeen}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+%   \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Warehouse Attendant/ Forklift Driver}{JTA Supermarkets }{July 2014 - June 2015, July 2016 - August 2016}{}
+\begin{itemize}
+\item Packing and managing the supermarket's warehouse 
+\item Assisting visitors to the warehouse in getting their goods or calculating the available stock. 
+\end{itemize}
+
+\divider
+
+\cvevent{Driver}{Karik Marketing Company Ltd.}{July 2015}{Chaguanas, Trinidad}
+\begin{itemize}
+\item Assist in delivering and collecting items across Trinidad.
+\item Assist in any tasks required to be done in the office or on the field.
+\end{itemize}
+
+\cvsection{Projects}
+
+\cvevent{MediDataApp}{University of the West Indies}{2018}{}
+\begin{itemize}
+\item Application stores all medical data for a user.
+\item Doctors are able to access a user's medical data, with persmission.
+\item Doctors can add records to a user's file on the application.
+\end{itemize}
+\cvtag{Python}
+\cvtag{Django Web Framework}
+\cvtag{SQL}
+\cvtag{Javascript}
+\cvtag{Bootstrap 4}
+\cvtag{HTML}
+\cvtag{CSS}
+
+\divider
+
+\cvevent{UWI E-Advisor}{University of the West Indies}{2018}{}
+Application that assists students in choosing courses to do during for the upcoming year. The application allows 
+students to schedule meetings with advisors. Advisors can access all of a student's information and records that were made
+during previous advising sessions.\\
+\cvtag{Python}
+\cvtag{Django Web Framework}
+\cvtag{SQL}
+\cvtag{Javascript}
+\cvtag{Bootstrap 4}
+\cvtag{HTML}
+\cvtag{CSS}
+
+\divider
+
+\cvevent{2G!vez}{WSIS Hackathon \#hackagainsthunger}{2017}{}
+2G!vez Allows users to create and manage community farms. The application allows charitable persons to donate to comminuty farms with time or equipment. The application collates data from open datasets and provides a map that shows the communities that are most in need of donations.\\
+\cvtag{Javascript}
+\cvtag{Bootstrap 4}
+\cvtag{HTML}
+\cvtag{CSS}
+\cvtag{firebase}
+\cvtag{Google Maps Api}
+\medskip
+
+\clearpage
+
+
+\cvsection[page2sidebar]{Education}
+
+\cvevent{B. Sc. Information Technology (Special) }{The University of the West Indies }{Sept 2015 -- June 2018}{}
+Degree Program covers courses on Networking, Databases, Programming, Project Management, Software Development and Business Ethics
+
+
+\divider
+
+\cvevent{Caribbean Advanced profiency Examinations}{Presentation College, San Fernando}{Sept 2012 -- June 2015}{}
+2013 Examinations
+
+\medskip
+\begin{tabular}{ l c }
+Communication Studies & Grade 1\\
+Biology Unit 1 & Grade 2\\
+Chemistry Unit 1 & Grade 3\\
+Information Technology Unit 1 & Grade 2
+\end{tabular}
+\medskip
+
+2014 Examinations
+
+\medskip
+\begin{tabular}{ l c }
+Biology Unit 1 &  Grade 2\\
+Biology Unit 2 & Grade 2\\
+Caribbean Studies & Grade 3\\
+Chemistry Unit 1 & Grade 3\\
+Chemistry Unit 2 & Grade 4\\
+Information Technology Unit 2 & Grade 2 
+\end{tabular}
+
+\divider
+
+\cvevent{Caribbean Secondary Education Certificate}{A.S.J.A Boys' College, San Fernando}{Sept 2008 -- June 2012}{}
+2012 Examinations
+
+\medskip
+\begin{tabular}{ l c }
+Social Studies & Grade 1\\
+English A & Grade 1\\
+Mathematics & Grade 1\\
+Biology & Grade 1\\
+Physics & Grade 1\\
+Information Technology &  Grade 2\\
+Chemistry & Grade 2\\
+Geography & Grade 2\\
+Additional Mathematics & Grade 4\\
+
+\end{tabular}
+
+
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+\end{document}
